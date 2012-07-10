@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <script src="utilities.js"></script>
+  <script src="complex.js"></script>
+  <script src="mandelbrot.js"></script>
+  <style>
+    html, body {margin: 0; padding: 0;}
+    .visible { display: inline-block; }
+    .hidden  { display: none; }
+  </style>
+  <title>Mandelbrot!</title>
+</head>
+<body>
+  <div>
+    <canvas id="canvas" width="320" height="480">
+      Your browser does not support the canvas tag.
+    </canvas>
+    <br />
+    <button id="zoom-out" value="-" >-</button>
+    <button id="zoom-in" value="+" >+</button>
+    <span id="loading" class="visible">Generating...</span>
+  </div>
+</body>
+</html>
